@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=parser
+comment0.target=org.apache.commons.csv.CSVRecord\ coldestHourInFile(org.apache.commons.csv.CSVParser)
+comment1.params=
+comment1.target=void\ testColdestInDay()
+comment10.params=parser\ value
+comment10.target=double\ averageTemperatureWithHighHumidityInFile(org.apache.commons.csv.CSVParser,\ int)
+comment11.params=
+comment11.target=void\ testAverageTemperatureWithHighHumidityInFile()
+comment2.params=currentRow\ smallestSoFar
+comment2.target=org.apache.commons.csv.CSVRecord\ getSmallestOfTwo(org.apache.commons.csv.CSVRecord,\ org.apache.commons.csv.CSVRecord)
+comment3.params=parser
+comment3.target=org.apache.commons.csv.CSVRecord\ lowestHumidityInFile(org.apache.commons.csv.CSVParser)
+comment3.text=\ \ \ public\ void\ testFileWithColdestTemperature()\ {\r\n\ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ String\ coldestFileName\ \=\ fileWithColdestTemperature();\r\n\ \ \ \ \ \ \ \ System.out.print("Coldest\ day\ was\ in\ file\ ");\r\n\ \ \ \ \ \ \ \ System.out.println(coldestFileName);\r\n\ \ \ \ \ \ \ \ FileResource\ fr\ \=\ new\ FileResource(coldestFileName);\r\n\ \ \ \ \ \ \ \ CSVRecord\ coldest\ \=\ coldestHourInFile(fr.getCSVParser());\r\n\ \ \ \ \ \ \ \ System.out.print("The\ coldest\ temperature\ on\ that\ day\ was\ ");\r\n\ \ \ \ \ \ \ \ System.out.println(coldest.get("TemperatureF"));\r\n\ \ \ \ \ \ \ System.out.println("All\ the\ temperatures\ on\ the\ coldest\ day\ were");\r\n\ \ \ \ \ \ \ for\ (CSVRecord\ record\:fr.getCSVParser())\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.print(record.get("DateUTC")+"\ "+\ record.get("TemperatureF")+"\ "+record.get("TimeEST"));\r\n\ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n}
+comment4.params=
+comment4.target=void\ testLowestHumidityInFile()
+comment5.params=currentRow\ smallestSoFar
+comment5.target=org.apache.commons.csv.CSVRecord\ getSmallestOfTwo2(org.apache.commons.csv.CSVRecord,\ org.apache.commons.csv.CSVRecord)
+comment6.params=
+comment6.target=org.apache.commons.csv.CSVRecord\ lowestHumidityInManyFiles()
+comment7.params=
+comment7.target=void\ testLowestHumidityInManyFiles()
+comment8.params=parser
+comment8.target=double\ averageTemperatureInFile(org.apache.commons.csv.CSVParser)
+comment9.params=
+comment9.target=void\ testAverageTemperatureInFile()
+numComments=12
